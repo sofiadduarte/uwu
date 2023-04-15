@@ -1,0 +1,26 @@
+body {
+    background-image: url(imagens/fundo2.jpg);
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela {
+    
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tabela img {
+    transition: transform 0.3s ease;
+    height: 200px;
+    width: 200px;
+}
+
+.tabela img:hover {
+    transform: scale(1.3);
+}

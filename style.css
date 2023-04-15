@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Beauty';
+    src: url(imagens/BeautyRegular.ttf);
+}
+@font-face {
+    font-family: 'Valentine';
+    src: url(imagens/Valentine.otf);
+}
+
+body {
+    overflow: hidden;
+    background-image: url(imagens/fundo2.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+header {
+    padding-top: 50px;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Valentine';
+    color: white;
+    text-shadow: 0px -7px 7px rgba(0, 0, 0, 0.185);
+ }
+
+.link {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    font-size: 3em;
+    text-shadow: 0px -7px 7px rgb(154, 33, 33);
+    font-family: 'Beauty';
+    cursor: pointer;
+}
+
+.link a:hover {
+    color: rgb(0, 0, 0);
+    transition: color 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.botao {
+    background-color: red;
+    height: 100px;
+    transform: rotate(-45deg);
+    width: 100px;
+    position: relative;
+    margin-top: -280px;
+    animation: pulse 1s ease-in-out infinite;
+    transform-origin: center center
+}
+
+.botao:before,
+.botao:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+}
+
+.botao:before {
+    top: -50px;
+    left: 0;
+}
+
+.botao:after {
+    top: 0px;
+    right: -50px;
+    transform: rotate(45deg);
+
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(-45deg);
+    }
+    100% {
+      transform: scale(1) rotate(-45deg);
+    }
+  }
+
+audio {
+    width: 150px;
+    height: 20px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+}
+
+ 
